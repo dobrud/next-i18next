@@ -22,6 +22,9 @@ export default (config) => {
         config.customDetectors.forEach(detector => browserDetectors.addDetector(detector))
         i18n.use(browserDetectors)
       }
+      if (config.browserLocalePath) {
+        config.localePath = config.browserLocalePath;
+      }
     }
 
     config.use.forEach(x => i18n.use(x))

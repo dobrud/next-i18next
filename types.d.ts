@@ -18,6 +18,7 @@ export type InitConfig = {
   defaultLanguage: string;
   ignoreRoutes?: string[];
   localePath?: string;
+  browserLocalePath?: string;
   localeStructure?: string;
   otherLanguages: string[];
   localeSubpaths?: Record<string, string>;
